@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_background">
+
+    <!-- Уменьшаем размер изображения -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="69dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/image_description"
+        android:scaleType="centerCrop" /> <!-- Установите масштабирование для правильного отображения -->
+
+    <!-- Настраиваем текст -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#EFEAEA"
+        android:shadowRadius="1"
+        android:text="HOMEKITCHEN"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp" /> <!-- Добавляем отступ сверху -->
+</LinearLayout>

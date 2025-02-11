@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Home Kitchen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Алла</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Главная</string>
+    <string name="menu_gallery">Калькулятор калорий</string>
+    <string name="menu_slideshow">Дневник калорий</string>
+    <string name="menu_info">Полезные статьи</string>
+
+    <string name="image_description">Описание изображения</string>
+
+
+
+        <string-array name="activity_levels">
+            <item>Низкая</item>
+            <item>Умеренная</item>
+            <item>Высокая</item>
+        </string-array>
+        <string-array name="goals">
+            <item>Поддержание веса</item>
+            <item>Похудение</item>
+            <item>Набор массы</item>
+        </string-array>
+
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Калькулятор калорий"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Рассчитайте сколько калорий, белков, жиров и углеводов вам нужно потреблять ежедневно для поддержания веса, похудения или набора массы."
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите вашу дневную активность:"
+            android:textSize="18sp"
+            android:textColor="#FF5722"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/activity_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите вашу цель:"
+            android:textSize="18sp"
+            android:textColor="#FF5722"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/goal_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите ваши данные:"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/age_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Возраст (лет)"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/height_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Рост (см)"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/weight_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вес (кг)"
+            android:inputType="number"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Рассчитать"
+            android:padding="12dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/result_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:visibility="gone"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+    </ScrollView>
